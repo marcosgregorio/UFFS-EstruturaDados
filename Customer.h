@@ -11,9 +11,11 @@ typedef struct customer Customer;
 
 struct sentC
 {
-    Customer *first,*last;
+    Customer *first;
+    Customer *last;
 };
-typedef struct sent SentinelC;
+typedef struct sentC SentinelC;
 
 Customer *getMemoryC(Customer cli);
 void registerCustomer(SentinelC *st, Customer cli);
+void printCustomers(Customer *cli, SentinelC *sr);
